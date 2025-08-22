@@ -1,0 +1,63 @@
+.bairroSection{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font);
+
+    .container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--green-strong);
+
+        .text{
+            width: 40%;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 35px;
+            
+            h2{
+                width: 60%;
+                font-size: clamp(1.5rem, 0.5rem + 2vw, 2.25rem);
+            }
+
+            p{
+                width: 60%;
+                font-size: clamp(1rem, 0.667rem + 0.667vw, 1.25rem);
+            }
+        }
+
+        .image{
+            width: 60%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+@media(max-width: 1024px){
+    .bairroSection{
+        .container{
+            flex-direction: column-reverse;
+            gap: 20px;
+
+            .text{
+                width: 100%;
+                padding: 20px 0;
+                gap: 20px;
+                h2,p{
+                    width: 80%;
+                }
+            }
+            .image{
+                width: 100%;
+                
+            }
+        }
+    }
+}
