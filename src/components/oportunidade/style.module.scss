@@ -1,0 +1,135 @@
+.oportunidadeSection {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font);
+
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .banner {
+            width: 100%;
+            height: 45vw;
+            max-height: 50vw;
+            display: flex;
+            align-items: end;
+            justify-content: left;
+            background-image: url("./../../assets/eco-ze-doca-2.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: center;
+
+            p {
+                width: 40%;
+                margin: 5% 10%;
+                font-size: clamp(1.25rem, 0.455rem + 1.591vw, 3rem);
+                font-weight: 800;
+                color: #ffffff;
+
+                .green {
+                    color: var(--green-font-weak);
+                }
+
+                .orange {
+                    background: var(--orange);
+                    padding: 5px;
+                    border-radius: 5px;
+                }
+            }
+        }
+
+        .card {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            background: var(--green-weak);
+            border-radius: 13px;
+            padding: 30px;
+            gap: 20px;
+            position: relative;
+            bottom: 60px;
+
+            h3 {
+                width: 80%;
+                text-align: left;
+                font-size: clamp(1.125rem, 0.955rem + 0.341vw, 1.5rem);
+                font-weight: 800;
+            }
+
+            p {
+                width: 80%;
+                font-size: clamp(1.125rem, 0.955rem + 0.341vw, 1.5rem);
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+@media(max-width: 1024px) {
+    .oportunidadeSection {
+        .container {
+            .banner {
+                width: 100%;
+                height: 45vw;
+                max-height: 50vw;
+                display: flex;
+                align-items: end;
+                justify-content: left;
+                background-image: url("./../../assets/eco-ze-doca-2.png");
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-position: center;
+
+                p {
+                    width: 80%;
+                    text-align: justify;
+                    margin: 5% auto;
+                    font-size: clamp(1.25rem, 0.455rem + 1.591vw, 3rem);
+                    font-weight: 800;
+                    color: #ffffff;
+
+                    .green {
+                        color: var(--green-font-weak);
+                    }
+
+                    .orange {
+                        background: var(--orange);
+                        padding: 5px;
+                        border-radius: 5px;
+                    }
+                }
+            }
+
+            .cardSm {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+
+                h3{
+                    width: 70%;
+                    text-align: center;
+                    font-size: 1.25rem;
+                    color: var(--orange);
+                    font-weight: 800;
+                }
+                p{
+                    width: 85%;
+                    text-align: center;
+                    color: var(--black);
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}

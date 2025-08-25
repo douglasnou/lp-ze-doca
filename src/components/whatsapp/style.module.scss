@@ -1,0 +1,99 @@
+.whatsappSection {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font);
+
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+
+        .logo {
+            width: 15%;
+        }
+
+        .slideContainer {
+            width: 55%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .slide {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .card {
+            width: 60%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(180deg, var(--gradient-01) 0%, var(--gradient-02) 100%);
+            border-radius: 16px;
+            padding: 20px 0;
+            cursor: pointer;
+            position: relative;
+            bottom: 50px;
+            z-index: 2;
+
+            img {
+                width: 15%;
+                max-width: 200px;
+                min-width: 70px;
+            }
+
+            p {
+                width: 60%;
+                font-size: clamp(1.125rem, 0.273rem + 1.705vw, 3rem);
+                font-weight: 800;
+                text-align: center;
+                color: #ffffff;
+            }
+
+            &:hover {
+                background: linear-gradient(90deg, var(--gradient-01) 0%, var(--gradient-02) 100%);
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            }
+        }
+    }
+}
+
+@media(max-width: 1024px) {
+    .whatsappSection {
+        .container {
+            width: 100%;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+
+            .logo {
+                width: 30%;
+            }
+
+            .slideContainer {
+                width: 100%;
+            }
+
+            .card {
+                width: 90%;
+                bottom: 0;
+
+                p{
+                    width: 70%;
+                }
+            }
+        }
+    }
+}
